@@ -1,0 +1,454 @@
+
+body {
+    text-align: center;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #2a5c0b;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #17c69b; /*Color de fondo del header*/
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px #042608;
+}
+
+.container {
+    text-align: center;
+    margin-top: -5%;
+    padding: 7%;
+}
+
+
+/*-----------------------------------------------PARTE DE ARRIBA (TITULO)--------------------------------------------------------------------*/
+
+
+.titlearriba{
+    background-color: #17c69b;
+    background-size: 50%;
+    background-image: url("/Imagenes/pruebaspatas.png");
+}
+
+.log{
+    border-radius: 20px;
+}
+
+.logaut {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.contLogo{
+    margin-top: 0%;
+}
+
+
+.showDogs {
+    margin-top: -90%;
+    animation: float 3s ease-in-out infinite; /* Duración y tipo de la animación */
+    filter: drop-shadow(0 0 5em #da9310); /* Iluminación */
+    cursor: pointer;
+}
+
+/* Definición de la animación */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+}
+
+.señal2{
+    cursor: pointer;
+    font-style: oblique;
+}.señal2:hover{filter: drop-shadow(0 0 1em /*Color*/);}
+
+
+/*----------Boton de Publicar adopcion-------------*/
+
+.cont-Adopciones{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 0%;
+}
+
+.adptar{
+    margin-top: 0%;
+}
+
+/*--------------------------------------------------BARRA DE BOTONES-----------------------------------------------------------------------*/
+
+/*-----estilo para todos los botones------*/
+button {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    background-color: #faedd9;
+    box-shadow: 5px 5px 10px #042608;
+}
+/*-----animacion para cada boton----------*/
+.btn{
+    display: none;
+    overflow: hidden;
+    border: 3px solid #808f12;
+    z-index: 1;
+}
+.btn:hover {filter: drop-shadow( 0 0 1em #ffffff);}
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: -200%;
+    background-color: #808f12;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+.btn:hover::before{
+    top: 0%;
+    border-radius: 0%;
+}
+/*----todo el contenido de los botones----*/
+.barra-botones {
+    display: flex;
+    justify-content: space-around;
+    height: 110px;
+}
+.barra-botones button {
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+
+/*---Boton y imagen con animacion por debajo del boton--*/
+
+/*.contBoton{
+    margin-left: 20%;
+}*/
+
+.contBoton:hover .señalBoton {
+    display: block;
+    cursor: pointer;
+    position:relative;
+}
+
+
+.señalBoton{
+    display: none;
+    position: absolute;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/*#Barra {
+    min-height: 10%;      Estos estilos son del js para la barra estatica de botones
+    width: 98%;           que en estos momentos no se utilizara
+    border-radius: 20px;
+}*/
+
+
+/*-------Colocar los "Label(Botones) en las huellas---"*/
+
+.btnLabel{
+    margin-top: -78%;
+    margin-left: -22%;
+    font-size: 187%;
+    cursor: pointer;
+    font-style: oblique;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+
+/*----------------BotonPata de Objetivos---------------*/
+.btnLabel1{
+    margin-top: -66%;
+    margin-left: 64%;
+    cursor: pointer;
+    font-style: oblique;
+}
+
+/*--------BotonesDedos para sub de Objetivos-------------*/
+
+.dedoBTN{
+    display: none;
+}
+/*---*/
+.dedoPata1{
+    margin-top: 214%;
+    margin-left: -260%;
+    cursor: pointer;
+}.dedoLabel1{
+    margin-top: -60%;
+    margin-left: -405%;
+    cursor: pointer;
+    font-size: 125%;
+    font-style: oblique;
+}
+/*---*/
+.dedoPata2{
+    margin-top: 97%;
+    margin-left: -361%;
+    cursor: pointer;
+}.dedoLabel2{
+    margin-top: -55%;
+    margin-left: -610%;
+    cursor: pointer;
+    font-size: 125%;
+    font-style: oblique;
+}
+/*---*/
+.dedoPata3{
+    margin-top: 0%;
+    margin-left: -415%;
+    cursor: pointer;
+}.dedoLabel3{
+    margin-top: -59%;
+    margin-left: -715%;
+    cursor: pointer;
+    font-size: 125%;
+    font-style: oblique;
+}
+
+/*---*/
+.dedoPata4{
+    margin-top: -15%;
+    margin-left: -590%;
+    cursor: pointer;
+}.dedoLabel4{
+    margin-top: -87%;
+    margin-left: -1065%;
+    cursor: pointer;
+    font-size: 104%;
+    font-style: oblique;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+
+.btnLabel2{
+    margin-top: -45%;
+    margin-left: -58%;
+    cursor: pointer;
+    font-style: oblique;
+}
+.btnLabel3{
+    margin-top: -45%;
+    margin-left: 55%;
+    font-size: 233%;
+    cursor: pointer;
+    font-style: oblique;
+}
+.btnLabel4{
+    margin-top: -45%;
+    margin-left: -9%;
+    font-size: 179%;
+    cursor: pointer;
+    font-style: oblique;
+}
+
+/*Aqui se correran las imagenes debajo de los botones*/
+
+.imgSeñalButon{position: absolute; left: 5.5%; margin-top: -1%;}
+.imgSeñalButon1{position: absolute; left: 25.7%; margin-top: -1%;}
+.imgSeñalButon2{position: absolute; left: 52.5%;}
+.imgSeñalButon3{position: absolute; left: 76%; margin-top: -2%;}
+.imgSeñalButon4{position: absolute; left: 88.7%; margin-top: -1%;}
+
+/*Aqui iran la huella para el boton*/
+
+.patasBOTON1{
+    margin-top: 101%;
+    margin-left: 5%;
+    cursor: pointer;
+}.patasBOTON2{
+    margin-top: 45%;
+    margin-left: 49%;
+    cursor: pointer;
+}.patasBOTON3{
+    margin-top: -2.8%;
+    margin-left: -25%;
+    cursor: pointer;
+}.patasBOTON4{
+    margin-top: -7.8%;
+    margin-left: 10.7%;
+    cursor: pointer;
+}.patasBOTON5{
+    margin-top: 58.6%;
+    margin-left: 10.5%;
+    cursor: pointer;
+}
+
+
+
+/*-------------LOGIN PARA PODER PUBLICAR --------------------*/
+
+input{
+    width: 20%;
+    padding: 5px;
+    border: 1px solid #008CBA;
+    border-radius: 5px;
+    font-family:monospace;
+}
+
+.cont4{
+    margin: 2% 5% 2% 5%;
+    border-radius: 20px;
+    background-image: url("/Imagenes/pruebaspatas.png");
+    background-size: 50%;
+}
+
+/*-------------------------------Titulo de INGRESAR------------------------------------------------*/
+
+
+.volunt{
+    background-color: #17c69b;
+    border: 2px solid #808f12;
+    animation: uping 5s ease-in-out infinite;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px  #808f12;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0%;
+}
+
+@keyframes uping {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+}
+
+.contVolunt{
+    padding: 3%; 
+    margin: -5% 0% -3%;
+    font-style: oblique;
+    font-size: 145%;
+}
+
+.cuadrosV{
+    border: 5px solid #e2efe3;
+    border-radius: 10px;
+    width: 35%;
+    height: 10px;
+    margin-top: 7%;
+}
+
+.cuadrosV1{
+    border: 5px solid #e2efe3;
+    border-radius: 10px;
+    width: 35%;
+    height: 10px;
+    margin-left: 63.9%;
+    margin-top: -7.8%;
+}
+
+.SubVolunt{
+    margin-top: -7.7%;
+}
+
+.PAdopciones{
+    padding: 2%;
+    font-size: 150%;
+    font-style: oblique;
+}
+/*--------------------------------------FORMULARIO*--------------------------------------------*/
+
+.form{
+    display: flex;
+    font-size:150%;
+    font-style: oblique;
+    margin-left: 30%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin-top: 0%;
+}
+
+.enviar{
+    font-size: 25px;
+    font-style: oblique;
+    font-family: monospace;
+    border: 1px solid #d96831;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #172c3c; /*Color de fondo de la pagina*/
+    color: white;
+    margin-left: 10%;
+}
+
+.enviar:hover {
+    background-color: #d96831;
+    filter: drop-shadow(0 0 1em #ffffff);
+}
+
+.imgcont{
+    margin-left: 20%;
+    border: 2px solid #172c3c;
+    border-radius: 20px;
+}
+
+/*---------------------------------------------Informacion de los contactos----------------------------------*/
+
+.info{
+    border-radius: 20px;
+    margin:0 0 0 1%;
+    padding-right: 8%;
+    padding-left: 8%;
+    background-image: url("/Imagenes/pruebaspatas.png");
+    background-size: 200%;
+    background-repeat: no-repeat;
+    box-shadow: 20px 20px 10px #042608;
+}
+
+.infoCont{
+    text-align: center;
+}
+
+.continformacion{
+    display: flex;
+    margin-top: 2%;
+    font-style: oblique;
+    
+}
+
+.links{
+    color: #076b31;
+}
+
+/*---------UBICACION DE LA FUNDACION --------*/
+
+.map{
+    margin: 1% 1% 0% 1%;
+    border: 2px solid #042608;
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px #042608;
+}
+
+.create{
+    margin: 1% 1% 1%;
+    display: flex;
+    color: #498b4e;
+}
